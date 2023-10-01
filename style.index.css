@@ -1,0 +1,195 @@
+
+/* Definiera standard typsnitt, bakgrundsbild och höjd för body och html taggar */
+html, body {
+  font-family: Arial, sans-serif;/* Ange typsnittet för texten till Arial och sans-serif som reserv */
+  height: 100%;
+  background-image: linear-gradient(to bottom, #111, #444);/* Skapa en linjär gradientbakgrund från toppen till botten, börjar med färg #111 och övergår till färg #444 */
+  margin: 0;/* Ange marginalen runt elementen till 0 för att ta bort eventuellt ytterligare utrymme */
+}
+
+/* Styling för sidhuvudet */
+header {
+  padding: 10px;
+}
+
+/* Styling för hjälp-menyen */
+.help-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+/* Styling för språkbyte till engelska */
+.englishlanguage-img {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Styling för länken för språkbyte till engelska */
+.help-menu a.language-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling för logotypen */
+.help-menu img {
+  height: auto;
+  margin-left: 5px;
+}
+
+/* Styling för logotypsbilden */
+.logo-image {
+  width: 90px; /* Justera logotypsbildens bredd efter behov */
+  height: auto;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
+/* Styling för navigationsmenyn */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Styling för menyns container */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1B4D3E;
+}
+
+/* Styling för menylänkarna */
+.menu-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0px 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #1B4D3E;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+/* Styling för hover-tillståndet på menylänkarna */
+.menu-link:hover {
+  background-color: white;
+  border-color: white;
+  color: green;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Styling för body-elementet */
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Styling för text som centrerar på sidan */
+.center-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 300px); /* Subtrahera höjden på sidfoten */
+  text-align: center;
+  color: white;
+  animation: fadeIn 2s ease-in-out;
+  margin-bottom: 50px; /* Lägg till något marginal */
+}
+
+/* Definiera en CSS-nyckelram med namnet "fadeIn" */
+@keyframes fadeIn {
+  /* Sätter opaciteten till 0 i början av animationen */
+  from { opacity: 0; }
+  /* Sätter opaciteten till 1 i slutet av animationen */
+  to { opacity: 1; }
+}
+
+
+/* Styling för titeltexten */
+.title {
+  font-size: 5em;
+  color: white;
+}
+
+/* Styling för underrubrik */
+.subtitle {
+  font-size: 2em; 
+  color: white; 
+}
+
+/* Styling för fotern */
+footer {
+  background-color: #1B4D3E; 
+  color: white; 
+  text-align: center; 
+  padding: 20px; 
+  position: absolute; 
+  width: 100%; 
+  bottom: 0; /* Placering längst ner på sidan */
+}
+
+/* Marginal efter fotosektionen */
+.footer-section {
+  margin-bottom: 20px;
+}
+
+/* Styling för rubrikerna i fotosektionen */
+.footer-section h3 {
+  margin-bottom: 10px; 
+  font-size: 1.2em; 
+}
+
+/* Ta bort punktlistestilen från länkarna i fotosektionen */
+ul {
+  list-style-type: none;
+  margin: 0; /* Ta bort marginalerna */
+  padding: 0; /* Ta bort paddingen */
+}
+
+/* Styling för länkarna i fotosektionen */
+li {
+  margin-bottom: 5px; /* Marginal nedanför varje länk */
+}
+
+a {
+  color: white; /* Textfärg för länkarna */
+  text-decoration: none; /* Ta bort understrykning från länkarna */
+}
+
+/* Styling för bottenmenyn i fotern */
+.footer-bottom {
+  font-size: 0.8em; 
+}
+
+
+/* för responsiva texter*/
+
+/* justera typsnittstorleken för mindre skärmar */
+@media screen and (max-width: 600px) {
+  body, h1, h2, h3, p, ul {
+    font-size: 1em;
+  }
+}
+
+/* justera typsnittstorleken för större skärmar */
+@media screen and (min-width: 1200px) {
+  body, h1, h2, h3, p, ul {
+    font-size: 1em;
+  }
+}
+
